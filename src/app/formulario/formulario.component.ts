@@ -1,10 +1,12 @@
 import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 import { Persona } from '../persona.model';
+import { LoggingService } from '../LoggingService.service';
 
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
-  styleUrls: ['./formulario.component.css']
+  styleUrls: ['./formulario.component.css'],
+  providers: [LoggingService]
 })
 export class FormularioComponent {
 
@@ -13,7 +15,7 @@ export class FormularioComponent {
   //nombreInput:string = '';
   //apellidoInput:string = '';
   
-  constructor(private loggingService:LoggingService){
+  constructor(private loggingService: LoggingService){
 
   }
 
