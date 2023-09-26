@@ -17,7 +17,9 @@ export class FormularioComponent {
   
   constructor(private loggingService:LoggingService,
               private personasService:PersonasService){
-
+                this.personasService.saludar.subscribe(
+                  (indice:number) => alert("El indice es: " + indice)
+                );
   }
 
   @ViewChild('nombreInput') nombreInput: ElementRef;
