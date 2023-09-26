@@ -19,9 +19,5 @@ export class AppComponent implements OnInit{
     this.personas = this.personasService.personas;
   }
 
-  personaAgregada(persona: Persona){
-    //this.loggingService.enviarMensajeAConsola("Agregamos al array la nueva persona: " + persona.nombre)
-    //this.personas.push( persona );
-    this.personasService.agregarPersona(persona);
-  }
+
 }
